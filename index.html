@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="container">
+    <form action="" id="sign-up"> 
+        <h2>sign up</h2>
+        <div class="info">
+            <input type="text"  id="full-name" >
+            <span>full name</span>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <small></small>
+
+       <div class="info">
+        <input type="text"  id="user-name" >
+        <span>user name</span>
+        <i class="fa-solid fa-at"></i>
+       </div>
+       <small></small>
+
+       <div class="info">
+        <input type="text" id="email" >
+        <span>email</span>
+        <i class="fa-sharp fa-solid fa-envelope"></i>
+       </div>
+
+       <small class="email-error"></small>
+
+      <div class="info">
+        <input type="password"  id="password" >
+        <span>password</span>
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <small></small>
+
+      <div class="info">
+        <input type="password" id="confirm" >
+        <span>confirm password</span>
+        <i class="fa-solid fa-lock-open"></i>
+      </div>
+      <small></small>
+
+        <div class="radio" id="gender">
+           <div><input type="radio" id="male" name="gender" value="male"> <label for="male">male</label></div> 
+           <div> <input type="radio" id="female" name="gender" value="female"> <label for="female">female</label></div>
+        </div>
+        <small class="gender"></small>
+        <input type="submit" value="sign up">
+        <div class="success">registration completed successfully &#10003</div>
+        <p class="link sign-up">I am already a member</p>
+    </form>
+   
+  <form action="" id="sign-in" >
+    <h2>sign in</h2>
+    <div class="info">
+      <input type="text" placeholder="enter user name">
+      <span>user name</span>
+      <i class="fa-solid fa-at"></i>
+    </div>
+    <small></small>
+    <div class="info">
+      <input type="password" placeholder="enter password">
+      <span>password</span>
+      <i class="fa-solid fa-lock"></i>
+    </div>
+   
+    <small></small>
+    <input type="submit" value="sign in">
+    <p class="link sign-in">create an account</p>
+    <div class="success sign"></div>
+  </form>
+</div>
+
+<div class="add-search">
+  <button id="add"> add user</button>
+  <input type="search"  id="" placeholder="name">
+  <button id="delete-all">delete all</button>
+</div>
+<div class="table">
+<table>
+  <thead>
+  <tr class="hh">
+    <th>id</th>
+    <th>name</th>
+    <th>user n</th>
+    <th>email</th>
+    <th>password</th>
+    <th>gender</th>
+    <th colspan="2">operation</th>
+  </tr>
+</thead>
+<tbody></tbody>
+  </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
